@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 const locations = JSON.parse(document.getElementById("map").dataset.locations);
-console.log(locations);
+// console.log(locations);
 
 // L.mapquest.key = '4gRCMDTh9G8hM7cG8m9h5zvgzdzdBM1L';
 

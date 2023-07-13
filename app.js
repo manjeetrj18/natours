@@ -16,6 +16,7 @@ const reviewRouter = require("./routes/reviewRoutes");
 const bookingRouter = require("./routes/bookingRoutes");
 const viewRouter = require("./routes/viewRoutes");
 const cookieParser = require("cookie-parser");
+const compression = require("compression");
 
 const app = express();
 
@@ -69,6 +70,8 @@ app.use(
     ],
   })
 );
+
+app.use(compression());
 
 // app.get("/api/v1/tours", getAllTours);
 app.use("/", viewRouter);

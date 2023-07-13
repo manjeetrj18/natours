@@ -185,7 +185,7 @@ exports.getToursWithin = catchAsync(async (req, res, next) => {
     },
   });
 
-  console.log(radius);
+  // console.log(radius);
 
   res.status(200).json({
     status: "success",
